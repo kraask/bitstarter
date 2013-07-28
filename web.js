@@ -3,6 +3,11 @@ var app = express();
 
 var text = 'Hello World 3'
 
+fs.readFileSync('index.html',  function (err, data){
+    if (err) throw err;
+    console.log(data);
+});
+
 
 app.use(express.logger());
 
