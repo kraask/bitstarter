@@ -1,7 +1,12 @@
 var express = require('express');
 var app = express();
+var fs=require('fs')
+var text = ''
 
-var text = 'Hello World 3'
+
+fs.readFile('index.html', 'utf-8', function(err, data){
+    text=data;
+});
 
 app.use(express.logger());
 
