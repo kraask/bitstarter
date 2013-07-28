@@ -6,10 +6,6 @@ var text = 'Hello World 3'
 
 app.use(express.logger());
 
-fs.ReadFileSync('/index.html'){
-    console.log
-}
-
 app.get('/', function(request, response) {
   response.send(text);
 });
