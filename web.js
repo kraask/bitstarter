@@ -4,7 +4,7 @@ var fs=require('fs')
 var text = ''
 
 
-fs.readFile('index2.html', 'utf-8', function(err, data){
+fs.readFile('index.html', 'utf-8', function(err, data){
     text=data;
 });
 
