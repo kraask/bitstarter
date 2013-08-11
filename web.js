@@ -4,7 +4,7 @@ var fs=require('fs')
 var text = ''
 
 
-fs.readFile('index.html', 'utf-8', function(err, data){
+fs.readFile('index2.html', 'utf-8', function(err, data){
     text=data;
 });
 
@@ -14,7 +14,12 @@ app.get('/', function(request, response) {
   response.send(text);
 });
 
-var port = process.env.PORT || 5000;
+var port1 = process.env.PORT || 80;
+var port2 = process.env.PORT || 8080;
+var port3 = process.env.PORT || 443;
+
+var port = port2;
+
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
